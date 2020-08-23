@@ -11,6 +11,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 //ROUTES IMPORTED BY ROMERO
 import { RouterModule } from '@angular/router'
 import { ROUTES } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,9 +25,11 @@ import { ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, { useHash: true })
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
