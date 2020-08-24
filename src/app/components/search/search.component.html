@@ -6,7 +6,7 @@
   </div>
 </div>
 
+<app-loading *ngIf="loading" class="m-5"></app-loading>
 
-
-<app-cards [items]="artists"></app-cards>
+<app-cards *ngIf="!loading" [items]="artists"></app-cards>
 
