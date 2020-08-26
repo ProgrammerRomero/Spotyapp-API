@@ -1,7 +1,7 @@
 
 <app-loading *ngIf="loading" class="m-5"></app-loading>
 
-<div class="row animated fadeIn" *ngIf="!loading">
+<div class="row animated fadeIn m-5" *ngIf="!loading">
   <div class="col-2">
       <img [src]="artist.images | noimage" class="img-thumbnail img-circle">
   </div>
@@ -14,8 +14,37 @@
     </p>
   </div>
   <div class="col-4 text-right">
-    <button routerLink="/search" class="btn btn-outline-danger">Back</button>
+    <button routerLink="/search" class="btn btn-outline-primary">Back</button>
   </div>
 </div>
 
+<div class="row m-5">
+  <div class="col">
+
+    <table class="table text-light text-center table-bordered">
+      <thead>
+        <tr class="bg-primary">
+          <th>Photo</th>
+          <th>Album</th>
+          <th>Song</th>
+          <th>Preview</th>
+        </tr>
+      </thead>
+
+      <tbody class="text-center text-dark">
+        <tr *ngFor="let topTrack of topTracks" class="table-secondary">
+          <td>
+            <img [src]="topTrack.album.images | noimage" class="img-thumb">
+          </td>
+          <td>{{topTrack.album.name}}</td>
+          <td>{{topTrack.name}}</td>
+          <td>
+            <!-- <iframe [src]="topTrack.uri | domseguro: 'https://open.spotify.com/embed?uri='"  width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+            <iframe [src]="topTrack.uri | domseguro: 'https://open.spotify.com/embed?uri=' " width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
