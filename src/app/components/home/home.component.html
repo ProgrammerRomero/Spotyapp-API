@@ -2,4 +2,14 @@
 
 <app-loading *ngIf="loading" class="m-5"></app-loading>
 
+<div *ngIf="error" class="alert alert-info m-5 text-center animated fadeIn" role="alert">
+  <h4 class="alert-heading">Error</h4>
+  <hr>
+  <span class="badge badge-pill badge-primary">
+    {{errorMessage}}
+  </span>
+
+
+</div>
+
 <app-cards [items]="newSongs"></app-cards>
