@@ -52,6 +52,6 @@ Go to Spotify Developers then get a Token and replace it into Service file to lo
 
 ## How Spotify by ROMERO looks "Artist's Albums"
 
-<img src="src/assets/img/home.png">
+<img src="src/assets/img/details.png">
 
 >Spotify by Romero  :neckbeard:
