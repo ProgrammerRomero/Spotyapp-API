@@ -25,3 +25,33 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## To Run the Spotify API:
+
+Go to Spotify Developers then get a Token and replace it into Service file to load the DATA
+
+## Get token from here:
+
+<img src="src/assets/img/token.png">
+
+
+## Add token into spotify.service.ts file, replace the header with the new token:
+
+<img src="src/assets/img/header.png">
+
+
+## How Spotify by ROMERO looks "Home"
+
+<img src="src/assets/img/home.png">
+
+
+## How Spotify by ROMERO looks "Search Artist"
+
+<img src="src/assets/img/search.png">
+
+
+## How Spotify by ROMERO looks "Artist's Albums"
+
+<img src="src/assets/img/home.png">
+
+>Spotify by Romero  :neckbeard:

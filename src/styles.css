@@ -9,6 +9,9 @@ hr {
     border-color: white;
 }
 
+.name {
+  color: white;
+}
 .puntero {
     cursor: pointer;
 }
